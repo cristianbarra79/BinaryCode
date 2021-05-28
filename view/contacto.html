@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de binary code con un formulario de contacto para recibir un email con la respuesta a su consulta y poder subscribirse">
+    <meta name="keywords"  content="binary code, formulario, consulta, email, subscribirse">
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Link a CSS -->
+    <link rel="stylesheet" href="../assets/estilos.css">
+    <link  rel="icon" href="../assets/iconos/logo_icono.png" type="image/png" />
+    <title>Contacto - Binary Code</title>
+</head>
+<body>
+    <!--header con menu de navegacion-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light degradado alineacionDerecha">
+            
+            <div id="logo" >            
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html" >Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ayuda.html">Ayuda</a>
+                </li>
+                 
+              </ul>
+              
+            </div>
+          </nav>
+    </header>
+    
+
+    <!-- Inicio formulario -->
+    <main>
+        <h1>Formulario de contacto</h1>        
+        <form class="container">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" class="form-control">                  
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" name="apellido">                  
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email">                  
+            </div>
+            <label for="sexo">Sexo:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo" value="hombre">
+                <label class="form-check-label" for="sexo">
+                    hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexo" value="option2">
+                <label class="form-check-label" for="mujer">
+                    mujer
+                </label>
+            </div>
+            
+            <!-- select -->
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de consulta:</label>
+                <select class="form-control" name="tipoconsulta" id="tipoconsulta">
+                    <option value="soporte">Soporte</option>
+                    <option value="precio">Precios</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="consulta">Ingrese su consulta:</label>
+                <textarea class="form-control" name="consulta" placeholder="Ingrese su texto aqui..." id="consulta" rows="3"></textarea>
+            </div>
+
+            <div class="form-check">                    
+                <input class="form-check-input" type="checkbox" name="subcribir" value="1">                    
+                <label class="form-check-label" for="subscribir">subscribirse</label>
+            </div>
+                            
+            <button type="submit" class="btn colorBotones">Enviar</button>
+            <button type="reset" class="btn colorBotones">Limpiar</button>
+            
+        </form>
+        
+                    
+
+    </main>
+    
+
+    <!--footer de copy y RRSS-->
+    <footer class="container-fluid">
+        <div class="row">
+            
+            <!--copyright-->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <h2>Copyright</h2>
+                <p>Cristian Barragan</p>
+            </div>
+            
+            <!--redes sociales-->
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">            
+                <h2>Redes sociales</h2>
+                <ul class="redesSociales__listaRedes">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+    </footer>
+    
+    <!-- link de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

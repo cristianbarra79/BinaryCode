@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina de ayuda binary code, muestra la metodología de trabajo y videos de ayuda">
+    <meta name="keywords"  content="binary code, metodología, implementación, mantenimiento, capacitacion, video, ejemplos">
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">  
+    <!-- Link al css -->
+    <link rel="stylesheet" href="../assets/estilos.css">
+    <link  rel="icon" href="../assets/iconos/logo_icono.png" type="image/png" />
+    <title>Ayuda - Binary Code</title>
+</head>
+<body>
+    <!--header con menu de navegacion-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light degradado alineacionDerecha">
+          
+          <div id="logo" >            
+              <a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html" >Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="./ayuda.html">Ayuda</a>
+              </li>
+               
+            </ul>
+            
+          </div>
+        </nav>
+  </header>
+
+    
+    <main class="container">
+
+        <h1>Metodologia de trabajo</h1>
+
+        <!-- Acordion -->
+        <div class="accordion accordion--margen " id="accordionExample">
+            <div class="card">
+              <div class="card-header colorGris" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Implementación
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    La implementación adecuada es esencial para lograr un sistema confiable y que cumpla con las necesidades de la organización. Este proceso abarca todos los métodos y actividades realizadas para que la implantación de un sistema sea exitosa.
+                    La implementación puede lograrse mediante los siguientes métodos de conversión:
+                    <ul>
+                        <li>Paralelo: Con este enfoque, los usuarios siguen operando el sistema anterior pero a su vez comienzan a utilizar el sistema nuevo. Es el enfoque más seguro, duplica los costos de operación</li>
+                        <li>Directo: El sistema nuevo es instalado reemplazando el anterior. Genera beneficios inmediatos de los nuevos métodos y controles, no hay otro sistema al cual recurrir si surge alguna dificultad</li>
+                        <li>Piloto: Se implementa el nuevo sistema en un área de la empresa y de esa forma hacer cambios y mejorarlo para la implementación completa, proporciona experiencia y prueba antes de la implantación</li>
+                        <li>Por etapa: Se implanta de manera gradual a los usuarios, permite una capacitación más espaciada, un largo periodo de instalación</li>
+                    </ul>                   
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header colorGris" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Mantenimiento
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    El mantenimiento del sistema es esencial para que el sistema mantenga su funcionalidad estable y se adapte a los cambios que vayan surgiendo en la empresa o el entorno.
+                    El mantenimiento puede dividirse en 4 diferentes tipos:
+                    <ul>
+                        <li>Adaptable: el sistema es modificado para hacer frente a cambios que surgen en la empresa o el entorno</li>
+                        <li>Perfectivo: Se agregan nuevos requerimientos referentes a mejoras funcionales para el software</li>
+                        <li>Correctivo: Se diagnostican y corrigen errores, posiblemente encontrados por el usuario</li>
+                        <li>Preventivo: Se aumentan o mejoran características del software para evitar problemas a futuro</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header colorGris" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Capacitacion
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    La capacitación de un sistema es de suma importancia a la hora de implementarlo. Es necesario que la capacitación sea completa y totalmente aceptada por los usuarios.
+                    Existen diferentes métodos para lograr una capacitación, entre los cuales se encuentran:
+                    <ul>
+                        <li>Mediante un manual de usuario: el manual es desarrollado por la empresa que proporciona el software, y contiene toda la información necesaria para poder utilizar de forma adecuada el sistema</li>
+                        <li>De forma directa: los usuarios utilizan el equipo en presencia de los instructores</li>
+                        <li>Por soporte web: Se brinda al usuario videos informativos en los cuales se explica de forma detallada el uso del sistema</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Fin de acordion -->
+        <div class="ayuda">
+            
+            <H2>Videos</H2>            
+            <!--iframe de youtube-->
+            <iframe class="bordesTB" width="560" height="315" src="https://www.youtube.com/embed/YPJwPRTGmyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            <h2>Ejemplo de programacion</h2>
+            <video class="bordesTB bordesTB--sinAbajo" width="100%" src="../assets/img/mivideo.mp4" controls muted></video>
+            <p class="ayuda__pieDeVideo">Insercion de video</p>
+        </div>
+
+    </main>
+
+    <!--footer de copy y RRSS-->    
+    <footer class="container-fluid">
+      <div class="row">
+          
+          <!--copyright-->
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+              <h2>Copyright</h2>
+              <p>Cristian Barragan</p>
+          </div>
+          
+          <!--redes sociales-->
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">            
+              <h2>Redes sociales</h2>
+              <ul class="redesSociales__listaRedes">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+          </div>
+
+          
+      </div>
+
+    </footer>
+
+    <!-- link de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
