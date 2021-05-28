@@ -252,6 +252,8 @@ form {
     font-size: 1rem; }
   .achicar {
     width: 100%; }
+  h1{
+    font-size: 2rem !important;}
   .secciones, .secciones__index, .secciones__nosotros {
     font-size: 1rem; }
   .contenedor {
