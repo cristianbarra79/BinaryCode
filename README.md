@@ -1,3 +1,4 @@
 # BinaryCode
 Sitio web de practica
-desarrollado por Cristian Barragan
+desarrollado por Cristian Barragan.
+Modificado desde Github
