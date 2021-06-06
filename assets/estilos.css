@@ -5,7 +5,8 @@ footer {
   background-image: linear-gradient(white, #A8A3F0);
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 50px; }
   footer div {
     width: 50%; }
   footer h2 {
@@ -42,8 +43,11 @@ form {
 .colorBotones {
   background-color: #007bff; }
 
+.coloBotones--alto {
+  height: 40px; }
+
 /* IDs*/
-/* menu y logo con flex */
+/* menu y logo*/
 #logo {
   width: 50%;
   position: relative;
@@ -51,19 +55,8 @@ form {
   left: 10px;
   /* margin-left: 5px;     */ }
 
-#menu {
-  display: flex;
-  flex-flow: row nowrap;
-  height: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  list-style-type: none; }
-  #menu a {
-    margin: 10px 15px;
-    transition: transform .2s;
-    font-size: 24px;
-    color: black;
-    text-decoration: none; }
+.nav-item {
+  font-size: 15pt; }
 
 .grilla {
   display: grid;
@@ -96,7 +89,7 @@ form {
   margin: 15px 10%; }
 
 .accordion--margen {
-  margin-bottom: 25px; }
+  margin: 25px 0; }
 
 .secciones, .secciones__index, .secciones__nosotros {
   margin: 15px;
@@ -110,17 +103,20 @@ form {
     grid-column-start: 1;
     grid-column-end: 3;
     position: relative;
-    left: 50px; }
+    left: 50px;
+    font-weight: bold; }
   .secciones__index p {
     color: #3f3697;
     align-self: center;
-    line-height: 45px; }
+    line-height: 45px;
+    font-weight: lighter; }
 
 /* nosotros*/
 .secciones__nosotros {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: lighter;
   color: #3f3697; }
 
 /*seccion contacto*/
@@ -182,6 +178,10 @@ form {
   padding-left: 0px; }
   .redesSociales__listaRedes li {
     margin: 15px; }
+
+.fab {
+  color: black;
+  size: 15pt; }
 
 .centradoCards {
   /*centra las card*/
@@ -252,8 +252,6 @@ form {
     font-size: 1rem; }
   .achicar {
     width: 100%; }
-  h1{
-    font-size: 2rem !important;}
   .secciones, .secciones__index, .secciones__nosotros {
     font-size: 1rem; }
   .contenedor {

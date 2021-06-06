@@ -12,6 +12,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
     div{
         width: 50%;
     }
@@ -45,9 +46,6 @@ span{
 form{    
     font-weight: bold;
 }
-
-
-
 $colores: (
     "Marron": #f0ebcc,
     "Gris": #f7f7f7,
@@ -61,13 +59,15 @@ $colores: (
     }	
 }
 
-
+.coloBotones--alto{
+    height: 40px;
+}
 
 
 /* IDs*/
 
 
-/* menu y logo con flex */
+/* menu y logo*/
 #logo{
     width: 50%;
     position: relative;
@@ -75,20 +75,8 @@ $colores: (
     left: 10px;
     /* margin-left: 5px;     */
 }
-#menu{    
-    display: flex;
-    flex-flow: row nowrap; 
-    height:100%;    
-    align-items: center;  
-    justify-content: flex-start;    
-    list-style-type: none;
-    a{    
-        margin: 10px 15px;
-        transition: transform .2s;
-        font-size: 24px;
-        color: black;
-        text-decoration: none;    
-    }  
+.nav-item{
+    font-size: 15pt;
 }
 
 
@@ -138,7 +126,7 @@ $colores: (
 }
 
 .accordion--margen{
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .secciones{
@@ -156,12 +144,14 @@ $colores: (
         grid-column-start: 1;
         grid-column-end: 3;
         position: relative;
-        left: 50px;        
+        left: 50px;
+        font-weight: bold;
     }
     p{    
         color: #3f3697;
         align-self: center;        
         line-height: 45px;
+        font-weight: lighter;
     }
 }
 
@@ -170,8 +160,9 @@ $colores: (
 .secciones__nosotros{
     @extend .secciones;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: lighter;
     color: #3f3697;     
 }   
 
@@ -256,12 +247,16 @@ $colores: (
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
-    padding-left: 0px;
+    padding-left: 0px;    
     li{
-        margin: 15px;
+        margin: 15px;        
     
     }
 
+}
+.fab{
+    color: black;
+    size: 15pt;
 }
 
 
