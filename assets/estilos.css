@@ -43,6 +43,9 @@ form {
 .colorBotones {
   background-color: #007bff; }
 
+.colorBotones--blanco {
+  color: white; }
+
 .coloBotones--alto {
   height: 40px; }
 
